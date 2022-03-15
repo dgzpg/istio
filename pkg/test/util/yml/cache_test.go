@@ -19,8 +19,6 @@ import (
 	"path"
 	"strings"
 	"testing"
-
-	. "github.com/onsi/gomega"
 )
 
 var (

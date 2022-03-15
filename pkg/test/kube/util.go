@@ -20,7 +20,6 @@ import (
 	"sort"
 	"time"
 
-	"github.com/hashicorp/go-multierror"
 	kubeApiCore "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	kubeApiMeta "k8s.io/apimachinery/pkg/apis/meta/v1"

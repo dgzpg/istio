@@ -20,7 +20,6 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cenkalti/backoff/v4"
 	"go.uber.org/atomic"
 )
 

@@ -35,6 +35,7 @@ type endpointsController struct {
 
 var _ kubeEndpointsController = &endpointsController{}
 
+// 创建endpoint处理器
 func newEndpointsController(c *Controller) *endpointsController {
 	informer := filter.NewFilteredSharedIndexInformer(
 		c.opts.DiscoveryNamespacesFilter.Filter,
@@ -163,6 +164,7 @@ func (e *endpointsController) getInformer() filter.FilteredSharedIndexInformer {
 	return e.informer
 }
 
+// event controller 的回调方法
 func (e *endpointsController) onEvent(curr interface{}, event model.Event) error {
 	ep, ok := curr.(*v1.Endpoints)
 	if !ok {

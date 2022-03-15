@@ -25,7 +25,6 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/hashicorp/go-multierror"
 	"github.com/spf13/cobra"
 	batch "k8s.io/api/batch/v1"
 	corev1 "k8s.io/api/core/v1"

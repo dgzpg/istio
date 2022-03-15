@@ -23,8 +23,6 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/istioctl/cmd"
 	"istio.io/istio/pkg/config/analysis/diag"
 	"istio.io/istio/pkg/config/analysis/msg"

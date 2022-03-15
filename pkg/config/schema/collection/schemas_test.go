@@ -18,8 +18,6 @@ import (
 	"testing"
 
 	_ "github.com/gogo/protobuf/types"
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/config"
 	"istio.io/istio/pkg/config/schema/collection"
 	"istio.io/istio/pkg/config/schema/resource"

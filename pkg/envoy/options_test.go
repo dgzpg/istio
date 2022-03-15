@@ -18,8 +18,6 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/envoy"
 )
 

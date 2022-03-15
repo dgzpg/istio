@@ -22,8 +22,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hashicorp/go-multierror"
-	"github.com/ryanuber/go-glob"
 	kerrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/cache"

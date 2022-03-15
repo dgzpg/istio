@@ -18,7 +18,6 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/onsi/gomega"
 	"k8s.io/utils/clock"
 
 	"istio.io/istio/pilot/pkg/status"

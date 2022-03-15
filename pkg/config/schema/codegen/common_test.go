@@ -16,8 +16,6 @@ package codegen
 
 import (
 	"testing"
-
-	. "github.com/onsi/gomega"
 )
 
 func TestCommentBlock(t *testing.T) {

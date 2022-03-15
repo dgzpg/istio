@@ -19,7 +19,6 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/Masterminds/sprig/v3"
 	"sigs.k8s.io/yaml"
 )
 

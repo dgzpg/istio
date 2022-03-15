@@ -18,8 +18,6 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/onsi/gomega"
-
 	meshconfig "istio.io/api/mesh/v1alpha1"
 	"istio.io/istio/pkg/config/mesh"
 	"istio.io/pkg/filewatcher"

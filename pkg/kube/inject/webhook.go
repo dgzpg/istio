@@ -27,7 +27,6 @@ import (
 	"sync"
 	"time"
 
-	"gomodules.xyz/jsonpatch/v3"
 	kubeApiAdmissionv1 "k8s.io/api/admission/v1"
 	kubeApiAdmissionv1beta1 "k8s.io/api/admission/v1beta1"
 	corev1 "k8s.io/api/core/v1"

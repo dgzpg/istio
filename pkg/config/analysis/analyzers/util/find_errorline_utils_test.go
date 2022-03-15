@@ -18,8 +18,6 @@ import (
 	"fmt"
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	kube2 "istio.io/istio/pkg/config/legacy/source/kube"
 	"istio.io/istio/pkg/config/resource"
 )

@@ -17,8 +17,6 @@ package clusterboot
 import (
 	"fmt"
 
-	"github.com/hashicorp/go-multierror"
-
 	"istio.io/istio/pkg/test/framework/components/cluster"
 
 	// imported to trigger registration

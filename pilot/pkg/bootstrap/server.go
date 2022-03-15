@@ -259,6 +259,7 @@ func NewServer(args *PilotArgs, initFuncs ...func(*Server)) (*Server, error) {
 		return nil, err
 	}
 
+	// 初始化服务控制器
 	if err := s.initControllers(args); err != nil {
 		return nil, err
 	}
@@ -311,6 +312,7 @@ func NewServer(args *PilotArgs, initFuncs ...func(*Server)) (*Server, error) {
 		return nil, fmt.Errorf("error initializing debug server: %v", err)
 	}
 	// This should be called only after controllers are initialized.
+	// 初始化Service Controller和config controller的handler，用于informer回调
 	s.initRegistryEventHandlers()
 
 	s.initDiscoveryService(args)
@@ -416,6 +418,7 @@ func (s *Server) Start(stop <-chan struct{}) error {
 	}
 
 	// Now start all of the components.
+	// 启动所有组件
 	if err := s.server.Start(stop); err != nil {
 		return err
 	}
@@ -646,12 +649,14 @@ func (s *Server) initIstiodAdminServer(args *PilotArgs, whc func() map[string]st
 func (s *Server) initDiscoveryService(args *PilotArgs) {
 	log.Infof("starting discovery service")
 	// Implement EnvoyXdsServer grace shutdown
+	// 会在初始化完毕之后调用start方法，启动xds server
 	s.addStartFunc(func(stop <-chan struct{}) error {
 		log.Infof("Starting ADS server")
 		s.XDSServer.Start(stop)
 		return nil
 	})
 
+	// 初始化grpc server 服务，并注册到sdxserver中
 	s.initGrpcServer(args.KeepaliveOptions)
 
 	if args.ServerOptions.GRPCAddr != "" {
@@ -863,6 +868,7 @@ func (s *Server) cachesSynced() bool {
 func (s *Server) initRegistryEventHandlers() {
 	log.Info("initializing registry event handlers")
 	// Flush cached discovery responses whenever services configuration change.
+	// service handler
 	serviceHandler := func(svc *model.Service, _ model.Event) {
 		pushReq := &model.PushRequest{
 			Full: true,

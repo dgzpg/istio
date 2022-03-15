@@ -17,8 +17,6 @@ package analysis
 import (
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/config/analysis/diag"
 	"istio.io/istio/pkg/config/resource"
 	"istio.io/istio/pkg/config/schema/collection"

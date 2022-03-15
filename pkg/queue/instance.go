@@ -18,8 +18,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cenkalti/backoff/v4"
-
 	"istio.io/istio/tests/util"
 	"istio.io/pkg/log"
 )

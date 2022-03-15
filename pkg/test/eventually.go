@@ -16,8 +16,6 @@ package test
 
 import (
 	"time"
-
-	"github.com/cenkalti/backoff/v4"
 )
 
 // A Condition is a function that returns true when a test condition is satisfied.

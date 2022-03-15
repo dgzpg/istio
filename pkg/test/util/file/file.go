@@ -23,8 +23,6 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/mitchellh/go-homedir"
-
 	"istio.io/istio/pkg/test"
 )
 

@@ -18,8 +18,6 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/go-multierror"
-
 	"istio.io/istio/pilot/pkg/networking/plugin"
 	"istio.io/istio/pkg/util/istiomultierror"
 	"istio.io/pkg/log"

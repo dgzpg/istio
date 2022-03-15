@@ -20,7 +20,6 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/onsi/gomega"
 	"k8s.io/kubectl/pkg/util/fieldpath"
 
 	"istio.io/api/mesh/v1alpha1"

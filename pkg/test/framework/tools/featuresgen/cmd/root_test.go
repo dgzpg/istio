@@ -18,8 +18,6 @@ import (
 	"sort"
 	"strings"
 	"testing"
-
-	"gopkg.in/yaml.v2"
 )
 
 func TestCreateConstantString(t *testing.T) {

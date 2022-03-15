@@ -17,8 +17,6 @@ package istiomultierror
 import (
 	"fmt"
 	"strings"
-
-	"github.com/hashicorp/go-multierror"
 )
 
 // MultiErrorFormat provides a format for multierrors. This matches the default format, but if there

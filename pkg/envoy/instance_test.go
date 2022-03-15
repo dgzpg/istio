@@ -24,8 +24,6 @@ import (
 	"time"
 
 	envoyAdmin "github.com/envoyproxy/go-control-plane/envoy/admin/v3"
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/envoy"
 	testEnvoy "istio.io/istio/pkg/test/envoy"
 	"istio.io/istio/pkg/test/util/reserveport"

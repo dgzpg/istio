@@ -20,7 +20,6 @@ import (
 	"net"
 	"os"
 
-	"github.com/florianl/go-nflog/v2"
 	"golang.org/x/net/ipv4"
 
 	"istio.io/pkg/env"

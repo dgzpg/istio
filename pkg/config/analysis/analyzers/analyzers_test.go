@@ -22,8 +22,6 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/config/analysis"
 	"istio.io/istio/pkg/config/analysis/analyzers/annotations"
 	"istio.io/istio/pkg/config/analysis/analyzers/authz"

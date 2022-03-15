@@ -28,7 +28,6 @@ import (
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
 	"github.com/google/go-containerregistry/pkg/v1/types"
-	"github.com/hashicorp/go-multierror"
 )
 
 // This file implements the fetcher of "Wasm Image Specification" compatible container images.

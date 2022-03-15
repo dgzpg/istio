@@ -18,8 +18,6 @@ import (
 	"bufio"
 	"fmt"
 	"strings"
-
-	"github.com/hashicorp/go-multierror"
 )
 
 type DeprecatedError struct {

@@ -16,8 +16,6 @@ package collection
 
 import (
 	"testing"
-
-	. "github.com/onsi/gomega"
 )
 
 func TestNewName(t *testing.T) {

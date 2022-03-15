@@ -16,8 +16,6 @@ package schema
 import (
 	"fmt"
 
-	"github.com/hashicorp/go-multierror"
-
 	"istio.io/istio/pkg/config"
 	"istio.io/istio/pkg/config/analysis"
 	"istio.io/istio/pkg/config/analysis/diag"

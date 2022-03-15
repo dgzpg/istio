@@ -23,8 +23,6 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/go-multierror"
-
 	"istio.io/istio/pkg/config/protocol"
 	"istio.io/istio/pkg/test/framework"
 	"istio.io/istio/pkg/test/framework/components/echo"

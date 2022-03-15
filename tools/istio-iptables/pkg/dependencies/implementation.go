@@ -22,7 +22,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cenkalti/backoff/v4"
 	"github.com/spf13/viper"
 
 	"istio.io/istio/pilot/pkg/util/sets"

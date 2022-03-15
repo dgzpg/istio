@@ -20,7 +20,6 @@ import (
 	"reflect"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/hashicorp/go-multierror"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
 	"istio.io/istio/pkg/config"

@@ -26,7 +26,6 @@ import (
 	"sync/atomic"
 
 	ocprom "contrib.go.opencensus.io/exporter/prometheus"
-	"github.com/hashicorp/go-multierror"
 	"github.com/prometheus/client_golang/prometheus"
 	"go.opencensus.io/stats/view"
 

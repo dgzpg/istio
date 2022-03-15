@@ -17,8 +17,6 @@ package util
 import (
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/config/resource"
 )
 

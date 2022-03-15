@@ -113,16 +113,19 @@ type DiscoveryServer struct {
 	mutex sync.RWMutex
 	// EndpointShards for a service. This is a global (per-server) list, built from
 	// incremental updates. This is keyed by service and namespace
+	// EndPoint 的缓存，以服务名和namespace作为索引，主要用于EDS更新
 	EndpointShardsByService map[string]map[string]*EndpointShards
 
 	// pushChannel is the buffer used for debouncing.
 	// after debouncing the pushRequest will be sent to pushQueue
+	// 统一接收其他组件发来的 PushRequest 的channel
 	pushChannel chan *model.PushRequest
 
 	// mutex used for protecting Environment.PushContext
 	updateMutex sync.RWMutex
 
 	// pushQueue is the buffer that used after debounce and before the real xds push.
+	// pushQueue主要是在真正的xDS推送前做防抖缓存
 	pushQueue *PushQueue
 
 	// debugHandlers is the list of all the supported debug handlers.

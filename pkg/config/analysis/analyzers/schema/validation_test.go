@@ -17,9 +17,6 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hashicorp/go-multierror"
-	. "github.com/onsi/gomega"
-
 	"istio.io/api/networking/v1alpha3"
 	"istio.io/istio/pkg/config"
 	"istio.io/istio/pkg/config/analysis/msg"

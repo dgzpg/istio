@@ -23,7 +23,6 @@ import (
 	"time"
 
 	envoyCore "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
-	. "github.com/onsi/gomega"
 	kubeMeta "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"

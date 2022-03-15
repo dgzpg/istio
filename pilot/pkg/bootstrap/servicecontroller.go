@@ -33,6 +33,8 @@ func (s *Server) ServiceController() *aggregate.Controller {
 }
 
 // initServiceControllers creates and initializes the service controllers
+// todo serviceController 为四种资源分别创建了一个监听器，用于监听k8s的资源更新，并注册EventHandler？？？？？
+// 监听k8s相关资源：service、endpoint、pod、node 关键方法：NewController
 func (s *Server) initServiceControllers(args *PilotArgs) error {
 	serviceControllers := s.ServiceController()
 

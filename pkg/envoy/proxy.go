@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
-	"strings"
+	"strings"discoveryServer
 	"syscall"
 	"time"
 

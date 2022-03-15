@@ -31,7 +31,6 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/lucas-clemente/quic-go"
 	"github.com/lucas-clemente/quic-go/http3"
 	"golang.org/x/net/http2"
 	"google.golang.org/grpc"

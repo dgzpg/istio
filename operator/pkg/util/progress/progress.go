@@ -21,8 +21,6 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/cheggaaa/pb/v3"
-
 	"istio.io/istio/operator/pkg/name"
 )
 

@@ -18,7 +18,6 @@ import (
 	"testing"
 
 	"github.com/gogo/protobuf/types"
-	. "github.com/onsi/gomega"
 )
 
 func TestInstance_IsEmpty_False(t *testing.T) {

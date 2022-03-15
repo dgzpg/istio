@@ -18,8 +18,6 @@ import (
 	"fmt"
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/test/framework/resource"
 )
 

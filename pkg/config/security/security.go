@@ -22,8 +22,6 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/hashicorp/go-multierror"
-
 	"istio.io/istio/pilot/pkg/util/sets"
 	"istio.io/istio/pkg/config/host"
 )

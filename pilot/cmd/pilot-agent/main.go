@@ -68,26 +68,26 @@ var (
 	loggingOptions         = log.DefaultOptions()
 	outlierLogPath         string
 
-	rootCmd = &cobra.Command{
+	rootCmd = &Command{
 		Use:          "pilot-agent",
 		Short:        "Istio Pilot agent.",
 		Long:         "Istio Pilot agent runs in the sidecar or gateway container and bootstraps Envoy.",
 		SilenceUsage: true,
-		FParseErrWhitelist: cobra.FParseErrWhitelist{
+		FParseErrWhitelist: FParseErrWhitelist{
 			// Allow unknown flags for backward-compatibility.
 			UnknownFlags: true,
 		},
 	}
 
-	proxyCmd = &cobra.Command{
+	proxyCmd = &Command{
 		Use:   "proxy",
 		Short: "XDS proxy agent",
-		FParseErrWhitelist: cobra.FParseErrWhitelist{
+		FParseErrWhitelist: FParseErrWhitelist{
 			// Allow unknown flags for backward-compatibility.
 			UnknownFlags: true,
 		},
 		PersistentPreRunE: configureLogging,
-		RunE: func(c *cobra.Command, args []string) error {
+		RunE: func(c *Command, args []string) error {
 			cmd.PrintFlags(c.Flags())
 			log.Infof("Version %s", version.Info.String())
 
@@ -241,7 +241,7 @@ func getDNSDomain(podNamespace, domain string) string {
 	return domain
 }
 
-func configureLogging(_ *cobra.Command, _ []string) error {
+func configureLogging(_ *Command, _ []string) error {
 	if err := log.Configure(loggingOptions); err != nil {
 		return err
 	}

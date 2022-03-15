@@ -90,12 +90,17 @@ func (s *DiscoveryServer) SvcUpdate(shard model.ShardKey, hostname string, names
 // It replaces InstancesByPort in model - instead of iterating over all endpoints it uses
 // the hostname-keyed map. And it avoids the conversion from Endpoint to ServiceEntry to envoy
 // on each step: instead the conversion happens once, when an endpoint is first discovered.
-func (s *DiscoveryServer) EDSUpdate(shard model.ShardKey, serviceName string, namespace string,
-	istioEndpoints []*model.IstioEndpoint) {
+// EDSUpdate 计算所有集群和网络的目标地址成员资格。
+// 这是实现 EDS 的主要方法。
+// 它替换了模型中的 InstancesByPort - 它不是迭代所有端点，而是使用主机名键控映射。
+// 它避免了在每一步从 Endpoint 到 ServiceEntry 到 envoy 的转换：而是在第一次发现端点时发生一次转换。
+func (s *DiscoveryServer) EDSUpdate(shard model.ShardKey, serviceName string, namespace string, istioEndpoints []*model.IstioEndpoint) {
 	inboundEDSUpdates.Increment()
 	// Update the endpoint shards
+	// 更新缓存
 	fp := s.edsCacheUpdate(shard, serviceName, namespace, istioEndpoints)
 	// Trigger a push
+	// 进行配置更新，通过事件分发执行xDS分发。
 	s.ConfigUpdate(&model.PushRequest{
 		Full: fp,
 		ConfigsUpdated: map[model.ConfigKey]struct{}{{

@@ -23,7 +23,6 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/hashicorp/go-multierror"
 	"github.com/spf13/cobra"
 	admit_v1 "k8s.io/api/admissionregistration/v1"
 	v1 "k8s.io/api/core/v1"

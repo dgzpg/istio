@@ -28,7 +28,6 @@ import (
 	"time"
 
 	gogojsonpb "github.com/gogo/protobuf/jsonpb"
-	"github.com/hashicorp/go-multierror"
 	kubeApiCore "k8s.io/api/core/v1"
 	kubeApiMeta "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"

@@ -17,8 +17,6 @@ package collection_test
 import (
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/config/schema/collection"
 	"istio.io/istio/pkg/config/schema/resource"
 )

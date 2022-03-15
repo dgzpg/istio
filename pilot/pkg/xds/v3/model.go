@@ -16,8 +16,6 @@ package v3
 
 import (
 	"strings"
-
-	"github.com/envoyproxy/go-control-plane/pkg/resource/v3"
 )
 
 const (

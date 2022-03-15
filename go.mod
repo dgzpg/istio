@@ -63,7 +63,7 @@ require (
 	github.com/prometheus/common v0.32.1
 	github.com/prometheus/prometheus v2.5.0+incompatible
 	github.com/ryanuber/go-glob v1.0.0
-	github.com/spf13/cobra v1.3.0
+	github.com/spf13/cobra v1.4.0
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.10.1
 	github.com/vishvananda/netlink v1.1.1-0.20210330154013-f5de75959ad5
@@ -86,9 +86,9 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 	helm.sh/helm/v3 v3.8.0
-	istio.io/api v0.0.0-20220203163703-135c864f3866
+	istio.io/api v0.0.0-20220311222350-9e00f6adcbf2
 	istio.io/client-go v1.12.0-alpha.5.0.20220131165747-51ff28692b8a
-	istio.io/pkg v0.0.0-20220203154910-aa99fc270afc
+	istio.io/pkg v0.0.0-20220311222651-245b10b2167a
 	k8s.io/api v0.23.3
 	k8s.io/apiextensions-apiserver v0.23.1
 	k8s.io/apimachinery v0.23.3

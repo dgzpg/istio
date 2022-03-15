@@ -21,7 +21,6 @@ import (
 	"io"
 	"strings"
 
-	"github.com/hashicorp/go-multierror"
 	"github.com/spf13/cobra"
 	appsv1 "k8s.io/api/apps/v1"
 	apierror "k8s.io/apimachinery/pkg/api/errors"

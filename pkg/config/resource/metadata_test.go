@@ -16,8 +16,6 @@ package resource
 
 import (
 	"testing"
-
-	. "github.com/onsi/gomega"
 )
 
 func TestMetadata_Clone_NilMaps(t *testing.T) {

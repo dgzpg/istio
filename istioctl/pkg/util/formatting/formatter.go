@@ -21,7 +21,6 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mattn/go-isatty"
 	"sigs.k8s.io/yaml"
 
 	"istio.io/istio/pkg/config/analysis/diag"

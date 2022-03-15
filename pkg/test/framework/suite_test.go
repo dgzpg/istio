@@ -20,8 +20,6 @@ import (
 	"sync"
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/test/framework/components/environment/kube"
 	"istio.io/istio/pkg/test/framework/label"
 	"istio.io/istio/pkg/test/framework/resource"

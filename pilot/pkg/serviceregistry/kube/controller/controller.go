@@ -21,7 +21,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hashicorp/go-multierror"
 	"go.uber.org/atomic"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/meta"
@@ -512,6 +511,7 @@ func (c *Controller) Cleanup() error {
 	return nil
 }
 
+// todo service 的处理器？？？？
 func (c *Controller) onServiceEvent(curr interface{}, event model.Event) error {
 	svc, err := convertToService(curr)
 	if err != nil {
@@ -522,6 +522,7 @@ func (c *Controller) onServiceEvent(curr interface{}, event model.Event) error {
 	log.Debugf("Handle event %s for service %s in namespace %s", event, svc.Name, svc.Namespace)
 
 	// Create the standard (cluster.local) service.
+	// 将k8s的 service 转换成istio的service
 	svcConv := kube.ConvertService(*svc, c.opts.DomainSuffix, c.Cluster())
 	switch event {
 	case model.EventDelete:

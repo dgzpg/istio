@@ -18,8 +18,6 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/hashicorp/go-multierror"
-
 	"istio.io/istio/pkg/test"
 	"istio.io/istio/pkg/test/echo/client"
 )

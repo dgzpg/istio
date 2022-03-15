@@ -16,8 +16,6 @@ package resource
 
 import (
 	"testing"
-
-	. "github.com/onsi/gomega"
 )
 
 func TestStringMap_Clone_Nil(t *testing.T) {

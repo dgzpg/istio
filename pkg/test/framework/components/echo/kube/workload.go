@@ -20,7 +20,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hashicorp/go-multierror"
 	kubeCore "k8s.io/api/core/v1"
 
 	istioKube "istio.io/istio/pkg/kube"

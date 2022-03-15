@@ -24,7 +24,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cenkalti/backoff/v4"
 	"github.com/fsnotify/fsnotify"
 
 	"istio.io/istio/pilot/pkg/util/sets"

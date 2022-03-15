@@ -34,6 +34,13 @@ import (
 // Handlers execute on the single worker queue in the order they are appended.
 // Handlers receive the notification event and the associated object.  Note
 // that all handlers must be appended before starting the controller.
+
+// Controller 定义了一个事件控制器循环。
+// 代理程序向控制器循环注册自己，并接收有关服务拓扑更改或配置工件更改的通知。
+// 控制器保证以下一致性要求：控制器中的注册表视图至少与通知到达时一样新鲜，但可能更新鲜（例如“删除”取消“添加”事件）。
+// 例如，如果一个服务创建事件紧跟在服务删除事件之后，则该事件将看到没有该服务的服务注册中心。
+// 处理程序按照附加的顺序在单个工作队列上执行。处理程序接收通知事件和相关对象。
+// 请注意，必须在启动控制器之前附加所有处理程序。
 type Controller interface {
 	// Note: AppendXXXHandler is used to register high level handlers.
 	// For per cluster handlers, they should be registered by the `AppendXXXHandlerForCluster` interface.

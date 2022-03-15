@@ -14,10 +14,6 @@
 
 package distribution
 
-import (
-	"gopkg.in/yaml.v2"
-)
-
 type Report struct {
 	Reporter            string         `json:"reporter"`
 	DataPlaneCount      int            `json:"dataPlaneCount"`

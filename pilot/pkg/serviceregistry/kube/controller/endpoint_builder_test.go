@@ -18,7 +18,6 @@ import (
 	"testing"
 
 	core "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
-	. "github.com/onsi/gomega"
 	v1 "k8s.io/api/core/v1"
 
 	"istio.io/api/label"

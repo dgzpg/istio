@@ -21,8 +21,6 @@ import (
 	"time"
 
 	"github.com/mitchellh/copystructure"
-	"gopkg.in/yaml.v3"
-
 	"istio.io/istio/pkg/config/constants"
 	"istio.io/istio/pkg/test/echo/common"
 	"istio.io/istio/pkg/test/framework/components/cluster"

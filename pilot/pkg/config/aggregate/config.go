@@ -18,7 +18,6 @@ package aggregate
 import (
 	"errors"
 
-	"github.com/hashicorp/go-multierror"
 	"k8s.io/client-go/tools/cache"
 
 	"istio.io/istio/pilot/pkg/model"

@@ -19,8 +19,6 @@ import (
 	"net"
 	"strings"
 
-	"github.com/hashicorp/go-multierror"
-
 	"istio.io/istio/pkg/test"
 	"istio.io/istio/pkg/test/echo/client"
 	"istio.io/istio/pkg/test/echo/common"

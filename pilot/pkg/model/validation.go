@@ -18,8 +18,6 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/go-multierror"
-
 	"istio.io/istio/pkg/config/labels"
 	"istio.io/istio/pkg/config/validation"
 )

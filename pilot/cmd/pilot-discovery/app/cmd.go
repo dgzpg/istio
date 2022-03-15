@@ -95,6 +95,7 @@ func newDiscoveryCommand() *cobra.Command {
 			}
 
 			// Start the server
+			// 获取到Server的startFuncs集合，然后依次执行里面设置的函数
 			if err := discoveryServer.Start(stop); err != nil {
 				return fmt.Errorf("failed to start discovery service: %v", err)
 			}

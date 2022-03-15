@@ -20,8 +20,6 @@ import (
 	"io"
 	"strings"
 	"testing"
-
-	. "github.com/onsi/gomega"
 )
 
 var joinCases = []struct {

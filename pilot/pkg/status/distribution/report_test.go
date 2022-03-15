@@ -19,8 +19,6 @@ import (
 	"testing"
 
 	"github.com/onsi/gomega"
-	"gopkg.in/yaml.v2"
-
 	"istio.io/istio/pilot/pkg/status"
 )
 

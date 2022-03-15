@@ -22,7 +22,6 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/hashicorp/go-multierror"
 	ingress "k8s.io/api/networking/v1beta1"
 	kerrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/types"

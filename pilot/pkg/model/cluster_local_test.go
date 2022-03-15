@@ -17,8 +17,6 @@ package model_test
 import (
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	meshconfig "istio.io/api/mesh/v1alpha1"
 	"istio.io/istio/pilot/pkg/model"
 	"istio.io/istio/pkg/config/host"

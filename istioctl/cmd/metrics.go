@@ -23,7 +23,6 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/hashicorp/go-multierror"
 	"github.com/prometheus/client_golang/api"
 	promv1 "github.com/prometheus/client_golang/api/prometheus/v1"
 	"github.com/prometheus/common/model"

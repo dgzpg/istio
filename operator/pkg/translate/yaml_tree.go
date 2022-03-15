@@ -15,8 +15,6 @@
 package translate
 
 import (
-	"gopkg.in/yaml.v2"
-
 	"istio.io/istio/operator/pkg/tpath"
 	"istio.io/istio/operator/pkg/util"
 )

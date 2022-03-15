@@ -23,7 +23,6 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/onsi/gomega"
 	v1 "k8s.io/api/admissionregistration/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	klabels "k8s.io/apimachinery/pkg/labels"

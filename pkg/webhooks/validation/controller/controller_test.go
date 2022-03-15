@@ -22,7 +22,6 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/onsi/gomega"
 	kubeApiAdmission "k8s.io/api/admissionregistration/v1"
 	kubeErrors "k8s.io/apimachinery/pkg/api/errors"
 	kubeApiMeta "k8s.io/apimachinery/pkg/apis/meta/v1"

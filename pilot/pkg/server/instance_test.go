@@ -19,7 +19,6 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/onsi/gomega"
 	"go.uber.org/atomic"
 
 	"istio.io/istio/pilot/pkg/server"

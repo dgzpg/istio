@@ -17,7 +17,6 @@ package gateway
 import (
 	"testing"
 
-	. "github.com/onsi/gomega"
 	k8s "sigs.k8s.io/gateway-api/apis/v1alpha2"
 
 	networking "istio.io/api/networking/v1alpha3"

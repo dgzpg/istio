@@ -17,8 +17,6 @@ package yml_test
 import (
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/test/util/yml"
 )
 

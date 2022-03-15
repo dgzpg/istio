@@ -19,8 +19,6 @@ import (
 	"fmt"
 	"regexp"
 	"sort"
-
-	"github.com/hashicorp/go-multierror"
 )
 
 const (

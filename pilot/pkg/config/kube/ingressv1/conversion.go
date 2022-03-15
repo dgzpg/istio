@@ -22,7 +22,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hashicorp/go-multierror"
 	knetworking "k8s.io/api/networking/v1"
 	listerv1 "k8s.io/client-go/listers/core/v1"
 

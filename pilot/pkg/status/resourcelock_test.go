@@ -19,7 +19,6 @@ import (
 	"sync/atomic"
 	"testing"
 
-	. "github.com/onsi/gomega"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
 	"istio.io/api/meta/v1alpha1"

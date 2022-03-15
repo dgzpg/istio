@@ -20,7 +20,6 @@ import (
 	"io"
 	"sync"
 
-	"github.com/hashicorp/go-multierror"
 	kubeCore "k8s.io/api/core/v1"
 
 	"istio.io/istio/pkg/config/protocol"

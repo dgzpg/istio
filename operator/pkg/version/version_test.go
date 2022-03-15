@@ -20,7 +20,6 @@ import (
 	"testing"
 
 	"github.com/kr/pretty"
-	"gopkg.in/yaml.v2"
 )
 
 func TestVersion(t *testing.T) {

@@ -17,8 +17,6 @@ package strcase_test
 import (
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/util/strcase"
 )
 

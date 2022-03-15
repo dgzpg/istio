@@ -19,8 +19,6 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/config/schema/ast"
 	"istio.io/istio/pkg/test/util/assert"
 )

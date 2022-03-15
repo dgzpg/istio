@@ -19,8 +19,6 @@ import (
 	"fmt"
 	"testing"
 
-	. "github.com/onsi/gomega"
-
 	"istio.io/istio/pkg/config/resource"
 	"istio.io/istio/pkg/url"
 )

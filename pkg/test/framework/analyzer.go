@@ -19,8 +19,6 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/go-multierror"
-
 	"istio.io/istio/pkg/test/env"
 	"istio.io/istio/pkg/test/framework/features"
 	"istio.io/istio/pkg/test/framework/label"

@@ -27,8 +27,6 @@ import (
 	"sync"
 	"time"
 
-	"gopkg.in/square/go-jose.v2"
-
 	"istio.io/istio/pkg/config/constants"
 	"istio.io/pkg/log"
 )

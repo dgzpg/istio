@@ -26,7 +26,6 @@ import (
 	"github.com/gogo/protobuf/types"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	. "github.com/onsi/gomega"
 	"go.uber.org/atomic"
 
 	extensions "istio.io/api/extensions/v1alpha1"

@@ -19,7 +19,6 @@ import (
 	"testing"
 
 	"github.com/gogo/protobuf/types"
-	. "github.com/onsi/gomega"
 )
 
 func TestValidate(t *testing.T) {

@@ -19,7 +19,6 @@ util.go contains utility function for dealing with trees.
 package tpath
 
 import (
-	"gopkg.in/yaml.v2"
 	yaml2 "sigs.k8s.io/yaml"
 
 	"istio.io/istio/operator/pkg/util"

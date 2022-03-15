@@ -31,7 +31,6 @@ import (
 	"strings"
 
 	"github.com/kylelemons/godebug/pretty"
-	"gopkg.in/yaml.v2"
 	yaml2 "sigs.k8s.io/yaml"
 
 	"istio.io/istio/operator/pkg/util"
